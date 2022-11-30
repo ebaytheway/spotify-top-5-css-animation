@@ -1,13 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Cinzel:wght@800&display=swap');
 body{
     margin:30px;
     padding: 0px;
     box-sizing: border-box;
-    background-color: black;
+    background: linear-gradient(to right,black,rgb(155, 154, 154),black);
+    overflow-x: hidden;
+    background-repeat:no-repeat ;
+    background-attachment:fixed ;
 }
 
 .container{
     position: relative;
     display:flex;
+    left: 250px;
+    top: 100px;
 }
 
 .img-container > img {
@@ -28,16 +34,20 @@ img:hover{
 
 .text{
     position: absolute;
-    top: 80%;
-    font-size: 40px;
-    color: white;
+    top: 82%;
     font-weight: bold;
     transition: 0.7s ease-in-out;
-    opacity: 0;
     text-shadow: black 3px 3px;
+    font-size: 30px;
+    opacity: 0;
+    color: white;
+    pointer-events: none;
+    font-family: 'Chewy', cursive;
 }
 
 .img-container:hover .text{
-    transform: translate(200px);
+    transform: translate(100px);
     opacity: 1;
+
 }
+
